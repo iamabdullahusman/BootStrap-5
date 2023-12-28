@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bootstrap1';
+  title = 'ARC Reminders';
+  isAlert = false;
+  alertMsg = 'User  Updated Successfully';
+
 }

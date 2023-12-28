@@ -1,5 +1,10 @@
+<h1 class="text-primary">Welcome to ARC Reminders</h1>
 
-<app-header></app-header>
-<app-content></app-content>
-<app-footer></app-footer>
+<div *ngIf="isAlert" class="alert alert-primary" role="alert">
+    {{alertMsg}}
+  </div>
+  
+  <div  *ngIf="! isAlert"class="alert alert-danger" role="alert">
+    A simple danger alert check it out .
+  </div>
 <router-outlet></router-outlet>
